@@ -39,7 +39,7 @@
             // 
             // btnBrowseFolder
             // 
-            btnBrowseFolder.Location = new Point(1172, 86);
+            btnBrowseFolder.Location = new Point(1222, 86);
             btnBrowseFolder.Name = "btnBrowseFolder";
             btnBrowseFolder.Size = new Size(241, 23);
             btnBrowseFolder.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // tbSelectedFolder
             // 
-            tbSelectedFolder.Location = new Point(1173, 32);
+            tbSelectedFolder.Location = new Point(1223, 32);
             tbSelectedFolder.Name = "tbSelectedFolder";
             tbSelectedFolder.PlaceholderText = "None";
             tbSelectedFolder.ReadOnly = true;
@@ -60,7 +60,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(1173, 9);
+            label1.Location = new Point(1223, 9);
             label1.Name = "label1";
             label1.Size = new Size(119, 20);
             label1.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             lvFiles.Location = new Point(12, 9);
             lvFiles.Name = "lvFiles";
-            lvFiles.Size = new Size(1155, 367);
+            lvFiles.Size = new Size(1205, 486);
             lvFiles.TabIndex = 4;
             lvFiles.UseCompatibleStateImageBehavior = false;
             lvFiles.ColumnClick += lvFiles_ColumnClick;
@@ -78,7 +78,7 @@
             // cbHidden
             // 
             cbHidden.AutoSize = true;
-            cbHidden.Location = new Point(1173, 61);
+            cbHidden.Location = new Point(1223, 61);
             cbHidden.Name = "cbHidden";
             cbHidden.Size = new Size(112, 19);
             cbHidden.TabIndex = 5;
@@ -88,7 +88,7 @@
             // cbSystem
             // 
             cbSystem.AutoSize = true;
-            cbSystem.Location = new Point(1291, 61);
+            cbSystem.Location = new Point(1341, 61);
             cbSystem.Name = "cbSystem";
             cbSystem.Size = new Size(111, 19);
             cbSystem.TabIndex = 6;
@@ -99,7 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1423, 388);
+            ClientSize = new Size(1469, 507);
             Controls.Add(cbSystem);
             Controls.Add(cbHidden);
             Controls.Add(lvFiles);
