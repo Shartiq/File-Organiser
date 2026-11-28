@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Folder_Sorter.FileWork
+﻿namespace FileOrganiser.FileWork
 {
     public class FormatBytes
     {

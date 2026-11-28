@@ -1,4 +1,4 @@
-﻿namespace Folder_Sorter
+﻿namespace FileOrganiser
 {
     partial class Form1
     {
@@ -35,6 +35,7 @@
             lvFiles = new ListView();
             cbHidden = new CheckBox();
             cbSystem = new CheckBox();
+            btnCreateFolder = new Button();
             SuspendLayout();
             // 
             // btnBrowseFolder
@@ -68,11 +69,14 @@
             // 
             // lvFiles
             // 
+            lvFiles.FullRowSelect = true;
+            lvFiles.GridLines = true;
             lvFiles.Location = new Point(12, 9);
             lvFiles.Name = "lvFiles";
             lvFiles.Size = new Size(1205, 486);
             lvFiles.TabIndex = 4;
             lvFiles.UseCompatibleStateImageBehavior = false;
+            lvFiles.View = View.Details;
             lvFiles.ColumnClick += lvFiles_ColumnClick;
             // 
             // cbHidden
@@ -95,11 +99,22 @@
             cbSystem.Text = "Get System Files";
             cbSystem.UseVisualStyleBackColor = true;
             // 
+            // btnCreateFolder
+            // 
+            btnCreateFolder.Location = new Point(1223, 115);
+            btnCreateFolder.Name = "btnCreateFolder";
+            btnCreateFolder.Size = new Size(240, 23);
+            btnCreateFolder.TabIndex = 7;
+            btnCreateFolder.Text = "Create New Folder";
+            btnCreateFolder.UseVisualStyleBackColor = true;
+            btnCreateFolder.Click += btnCreateFolder_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1469, 507);
+            Controls.Add(btnCreateFolder);
             Controls.Add(cbSystem);
             Controls.Add(cbHidden);
             Controls.Add(lvFiles);
@@ -107,7 +122,7 @@
             Controls.Add(tbSelectedFolder);
             Controls.Add(btnBrowseFolder);
             Name = "Form1";
-            Text = "Form1";
+            Text = "File Organiser";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -122,5 +137,6 @@
         private ListView lvFiles;
         private CheckBox cbHidden;
         private CheckBox cbSystem;
+        private Button btnCreateFolder;
     }
 }

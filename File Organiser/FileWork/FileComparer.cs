@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections;
 
-namespace Folder_Sorter.FileWork
+namespace FileOrganiser.FileWork
 {
-    public class FileComparer : IComparer
+    public class FileComparer(int column, bool ascending) : IComparer
     {
-        private readonly int column;
-        private readonly bool ascending;
-
-        public FileComparer(int column, bool ascending)
-        {
-            this.column = column;
-            this.ascending = ascending;
-        }
+        private readonly int column = column;
+        private readonly bool ascending = ascending;
 
         public int Compare(object? x, object? y)
         {

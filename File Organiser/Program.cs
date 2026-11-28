@@ -1,4 +1,4 @@
-namespace Folder_Sorter
+namespace FileOrganiser
 {
     internal static class Program
     {
